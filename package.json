@@ -11,6 +11,7 @@
     "type": "git",
     "url": "git://github.com/parroit/chilli.git"
   },
+
   "bugs": {
     "url": "https://github.com/parroit/chilli/issues"
   },
@@ -35,5 +36,5 @@
     "gulp-mocha": "~0.5"
 
   },
-  "keywords": []
+  "keywords": ["curry","functional"]
 }
