@@ -8,7 +8,7 @@ will curry your functions
 Install the module with: `npm install chilli`
 
 ```javascript
-var chilli = require('chilli');
+var curry = require('chilli');
 var sum = curry(function(a, b) {
     return a + b;
 });
