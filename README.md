@@ -9,7 +9,15 @@ Install the module with: `npm install chilli`
 
 ```javascript
 var chilli = require('chilli');
-chilli.awesome(); // "hello "
+var sum = curry(function(a, b) {
+    return a + b;
+});
+
+var sum3 = sum(3);
+var result = sum3(5);
+
+//result === 8
+//
 ```
 
 ## Other stuff
