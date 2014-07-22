@@ -12,11 +12,27 @@ var chai = require('chai');
 chai.expect();
 chai.should();
 
-var chilli = require('../lib/chilli.js');
+var curry = require('../lib/chilli.js');
 
-describe('chilli', function(){
-    it('is defined', function(){
-      chilli.should.be.a('function');
+describe('chilli', function() {
+    it('is defined', function() {
+        curry.should.be.a('function');
+    });
+    
+    var sum = curry(function(a, b) {
+        return a + b;
     });
 
+    var sum3 = sum(3);
+    var result = sum3(5);
+
+
+
+    it('return result when all args supplied', function() {
+        result.should.be.equal(8);
+    });
+
+    it('return partial applyed fn when not all args supplied', function() {
+        sum3.should.be.a('function');
+    });
 });
