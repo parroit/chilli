@@ -11,7 +11,6 @@
     "type": "git",
     "url": "git://github.com/parroit/chilli.git"
   },
-
   "bugs": {
     "url": "https://github.com/parroit/chilli/issues"
   },
@@ -23,18 +22,22 @@
   ],
   "main": "lib/chilli",
   "engines": {
-      "node": ">=0.10.26",
-      "npm": ">=1.4.3"
+    "node": ">=0.10.26",
+    "npm": ">=1.4.3"
   },
   "scripts": {
     "test": "gulp test"
   },
-  "dependencies": {},
+  "dependencies": {
+    "gulp": "^3.8.8"
+  },
   "devDependencies": {
     "chai": "~1.9.1",
     "gulp": "~3.8.6",
     "gulp-mocha": "~0.5"
-
   },
-  "keywords": ["curry","functional"]
+  "keywords": [
+    "curry",
+    "functional"
+  ]
 }
